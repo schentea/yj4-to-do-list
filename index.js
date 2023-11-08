@@ -46,4 +46,5 @@ const arr4 = [
     {name: "최재식", hobby: "유희왕"}
 ]
 console.log(arr4)
-console.log(arr4[0].hobby)
+console.log(arr4[0]) // 배열에서 원하는 객체 가져오기
+console.log(arr4[0].hobby) // 객체 안의 원하는 값 하나 가져오기
