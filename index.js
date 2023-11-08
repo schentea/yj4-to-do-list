@@ -27,6 +27,6 @@ console.log("나의 이름은 " + name + "이고, " + "취미는 " + hobby + "�
 console.log(`나의 이름은 ${name}이고, 취미는 ${hobby}입니다.`)
 
 // 배열
-const arr =  [1, 2, 3]
+const arr =  [1, 2, 3, 4]
 console.log(arr)
 console.log(arr[0]) // 배열에 저장된 값 중에 1만 출력 ( [] 사용 )
