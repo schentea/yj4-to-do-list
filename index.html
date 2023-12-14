@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <style>
+        form {
+            width: 500px;
+            margin: 0 auto;
+            padding : 40px
+        }
+        input {
+            width : 100%;
+            padding : 10px 10px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 700px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h1>스마트웹앱 4기</h1>
-        <p>콘솔창 확인해서 JS 문법 보기</p>
-    </div>
+    <form id="toDoForm">
+        <input type="text" placeholder="할 일을 입력해주세요.">
+    </form>
+    <ul id="todolist">
+
+    </ul>
     <script src="./index.js"></script>
 </body>
 </html>
