@@ -4,43 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
-    <style>
-        form {
-            width: 500px;
-            margin: 0 auto;
-            padding : 40px
-        }
-        #todotext {
-            width : 100%;
-            padding : 10px 10px;
-        }
-        ul {
-            border: 1px solid black;
-            margin: 0 auto;
-            width: 800px;
-        }
-        li {
-            list-style: decimal;
-            margin: 0 auto;
-            border : 2px solid gray;
-            width: 524px;
-            height: 50px;
-            margin-top: 10px;
-            border-radius: 20px;
-            text-align: center;
-            overflow: hidden;
-        }
-        
-        .btn {
-            width: 50px;
-            height: 50px;
-            border-radius: 15px;
-            margin-left: 700px;
-            margin-top: 100x;
-          
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form id="toDoForm">
@@ -49,6 +13,20 @@
     <ul id="todolist">
 
     </ul>
-    <script src="./index.js"></script>
+    <div class= "clock-container">
+        <div id="clock"></div>
+    </div>
+    <div class="randImage-container">
+        <div id ="randImage"></div>
+        <div id ="advice"></div>
+    </div>
+    <div class="weather-container">
+        <div id="weather"></div>
+    </div>
+    <script src="index.js"></script>
+    <script src="clock.js"></script>
+    <script src="randImage.js"></script>
+    <script src="advice.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>

@@ -9,11 +9,11 @@ function saveTodo() {
     localStorage.setItem("Todos",JSON.stringify(todos))
 }
 
-function deleteTodo(e, todosObj, li, button) {
+function deleteTodo(e, todosObj, li, button, span1) {
     console.log(todosObj);
     //li 요소 삭제
     ul.removeChild(li);
-    ul.removeChild(button);
+    span1.removeChild(button);
     
     
     //로컬 스토리지와 배열에서 값 삭제
@@ -25,6 +25,7 @@ function deleteTodo(e, todosObj, li, button) {
 
 function paintToDo(todosObj) {
     const span = document.createElement("span");
+    const span1 = document.createElement("span");
     const button = document.createElement("input");
     const li = document.createElement("li");
     li.setAttribute("id", todosObj.id)
@@ -32,14 +33,18 @@ function paintToDo(todosObj) {
     button.setAttribute("type", "button")
     button.setAttribute("value", "X")
     button.className = "btn";
+
+    span.className ="span1";
+    
     span.innerText = todosObj.text;
 
     button.addEventListener("click",function(e){
-        deleteTodo(e, todosObj, li, button);
+        deleteTodo(e, todosObj, li, button, span1);
     })
 
     li.appendChild(span);
-    ul.appendChild(button);
+    li.appendChild(span1);
+    span1.appendChild(button);
     ul.appendChild(li);
 }
 
