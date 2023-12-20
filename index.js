@@ -29,6 +29,7 @@ function paintToDo(todosObj) {
     const button = document.createElement("input");
     const li = document.createElement("li");
     li.setAttribute("id", todosObj.id)
+    li.setAttribute("draggable", "true");
 
     button.setAttribute("type", "button")
     button.setAttribute("value", "X")

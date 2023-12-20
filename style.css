@@ -13,12 +13,11 @@ ul {
     width: 800px;
 }
 li {
+    padding-top: 20px;
     list-style: decimal;
     margin: 0 auto;
     width: 524px;
     height: 50px;
-    margin-top: 10px;
-    border-radius: 1%;
     text-align: center;
     overflow: hidden;
 }
@@ -31,7 +30,6 @@ li {
     height: 30px;
     border-radius: 10px;
     float: right;
-    
 }
 .clock-container {
     margin: 0 auto;
@@ -80,4 +78,7 @@ li {
     font-weight: 700;
     color: white;
     font-size: 30px;
+}
+.dragging {
+    opacity: 0.1;
 }
