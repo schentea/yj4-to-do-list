@@ -9,13 +9,14 @@ function saveTodo() {
   localStorage.setItem("Todos", JSON.stringify(todos));
 }
 
-function deleteTodo(event, todosObj, li, button, span1) {
+function deleteTodo(event, li, button, span1) {
   //li 요소 삭제
   ul.removeChild(li);
   span1.removeChild(button);
-
   //로컬 스토리지와 배열에서 값 삭제
-  todos = todos.filter((item) => item.id !== todosObj.id);
+  todos = todos.filter(
+    (item) => item.text !== li.querySelector("span").innerText
+  );
   localStorage.setItem("Todos", JSON.stringify(todos));
   console.log(todos);
 }
