@@ -38,7 +38,7 @@ function paintToDo(todosObj) {
   span.innerText = todosObj.text;
 
   button.addEventListener("click", function (event) {
-    deleteTodo(event, todosObj, li, button, span1);
+    deleteTodo(event, li, button, span1);
   });
 
   li.appendChild(span);
